@@ -1,7 +1,7 @@
 // CounterComponent.js
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { incrementAction, decrementAction } from './ActionCreators';
+import { incrementAction, decrementAction, incrementBy2Action, decrementBy2Action } from './ActionCreators';
 import "./CounterComponent.css";
 
 const CounterComponent = () => {
@@ -15,6 +15,12 @@ const CounterComponent = () => {
         Increment by 5
       </button>
       <button onClick={() => dispatch(decrementAction())}>Decrement</button>
+      <button onClick={() => dispatch(incrementBy2Action())}>
+        Increment by 2
+      </button>
+      <button onClick={() => dispatch(decrementBy2Action())}>
+        Decrement by 2
+      </button>
     </div>
   );
 };
