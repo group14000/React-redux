@@ -1,12 +1,10 @@
-// App.js
-import React from 'react';
-import ReduxProvider from './ReduxProvider';
-import CounterComponent from './CounterComponent';
+import Counter from './components/Counter';
 
-const App = () => (
-  <ReduxProvider>
-    <CounterComponent />
-  </ReduxProvider>
-);
+
+function App() {
+  return (
+    <Counter />
+  );
+}
 
 export default App;
